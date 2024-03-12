@@ -1,6 +1,6 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Home } from './pages/index'
-import { exercicios } from './pages/exercicios'
+import { guiaExercicios } from './pages/guiaExercicios'
 import { jogos } from './pages/jogos'
 import { desempenho } from './pages/desempenho'
 import { instituicoes } from './pages/instituicoes'
@@ -26,8 +26,8 @@ export function Routes() {
                 }}
             />
             <Tab.Screen
-                name="exercicios"
-                component={exercicios}
+                name="guiaExercicios"
+                component={guiaExercicios}
                 options={{
                     tabBarShowLabel: false,
                     headerShown: false,
