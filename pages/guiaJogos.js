@@ -2,13 +2,13 @@
 import { ScrollView, Image, View, StyleSheet, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-export function guiaExercicios() {
+export function guiaJogos() {
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <ScrollView>
                 <View style={ESTILO.header}>
                     <Text style={ESTILO.title}>
-                        Guia de Exercícios
+                        Guia de Jogos
                     </Text>
                 </View>
                 <View style={ESTILO.main}>
@@ -21,7 +21,7 @@ export function guiaExercicios() {
                                 Exercite-se
                             </Text>
                         </View>
-                        <Image source={require("../assets/alzheimerImg.png")} style={ESTILO.alzheimerImg} />
+                        <Image source={require("../assets/exerAlzhei.png")} style={ESTILO.alzheimerImg} />
                     </View>
                     <View style={ESTILO.avc}>
                         <View style={ESTILO.avcTexto}>
@@ -32,7 +32,7 @@ export function guiaExercicios() {
                                 Exercite-se
                             </Text>
                         </View>
-                        <Image source={require("../assets/avcImg.png")} style={ESTILO.avcImg} />
+                        <Image source={require("../assets/avc.png")} style={ESTILO.avcImg} />
                     </View>
                     <View style={ESTILO.esquizofrenia}>
                         <View style={ESTILO.esquizofreniaTexto}>
@@ -43,7 +43,7 @@ export function guiaExercicios() {
                                 Exercite-se
                             </Text>
                         </View>
-                        <Image source={require("../assets/esquizofreniaImg.png")} style={ESTILO.esquizofreniaImg} />
+                        <Image source={require("../assets/esqui.png")} style={ESTILO.esquizofreniaImg} />
                     </View>
                     <View style={ESTILO.parkinson}>
                         <View style={ESTILO.parkinsonTexto}>
@@ -54,7 +54,7 @@ export function guiaExercicios() {
                                 Exercite-se
                             </Text>
                         </View>
-                        <Image source={require("../assets/parkinsonImg.png")} style={ESTILO.parkinsonImg} />
+                        <Image source={require("../assets/malParkinson.png")} style={ESTILO.parkinsonImg} />
                     </View>
                 </View>
             </ScrollView>
@@ -86,7 +86,7 @@ const ESTILO = StyleSheet.create({
         backgroundColor: "#CFB9E5",
         flexDirection: "row",
         justifyContent: "space-around",
-        alignItems:"center"
+        alignItems: "center"
     },
     avc: {
         width: 288,
@@ -95,7 +95,7 @@ const ESTILO = StyleSheet.create({
         backgroundColor: "#7485BF",
         flexDirection: "row",
         justifyContent: "space-around",
-        alignItems:"center"
+        alignItems: "center"
     },
     esquizofrenia: {
         width: 288,
@@ -104,7 +104,7 @@ const ESTILO = StyleSheet.create({
         backgroundColor: "#719257",
         flexDirection: "row",
         justifyContent: "space-around",
-        alignItems:"center"
+        alignItems: "center"
     },
     parkinson: {
         width: 288,
@@ -113,23 +113,23 @@ const ESTILO = StyleSheet.create({
         backgroundColor: "#E1374C",
         flexDirection: "row",
         justifyContent: "space-around",
-        alignItems:"center"
+        alignItems: "center"
     },
     alzheimerImg: {
-        width: 93,
+        width: 101,
         height: 87
     },
     avcImg: {
-        width: 109,
-        height: 153
+        width: 82,
+        height: 74
     },
     esquizofreniaImg: {
-        width: 83,
-        height: 91
+        width: 71,
+        height: 70
     },
     parkinsonImg: {
-        width: 68,
-        height: 72
+        width: 90,
+        height: 91
     }
 
 })
