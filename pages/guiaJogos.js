@@ -1,5 +1,5 @@
 
-import { ScrollView, Image, View, StyleSheet, Text } from "react-native";
+import { ScrollView, Image, View, StyleSheet, Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export function guiaJogos() {
@@ -12,7 +12,8 @@ export function guiaJogos() {
                     </Text>
                 </View>
                 <View style={ESTILO.main}>
-                    <View style={ESTILO.alzheimer}>
+
+                    <TouchableOpacity style={ESTILO.alzheimer}>
                         <View style={ESTILO.alzheimerTexto}>
                             <Text style={ESTILO.titulo}>
                                 Alzheimer
@@ -22,8 +23,9 @@ export function guiaJogos() {
                             </Text>
                         </View>
                         <Image source={require("../assets/exerAlzhei.png")} style={ESTILO.alzheimerImg} />
-                    </View>
-                    <View style={ESTILO.avc}>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity style={ESTILO.avc}>
                         <View style={ESTILO.avcTexto}>
                             <Text style={ESTILO.titulo}>
                                 AVC
@@ -33,8 +35,9 @@ export function guiaJogos() {
                             </Text>
                         </View>
                         <Image source={require("../assets/avc.png")} style={ESTILO.avcImg} />
-                    </View>
-                    <View style={ESTILO.esquizofrenia}>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity style={ESTILO.esquizofrenia}>
                         <View style={ESTILO.esquizofreniaTexto}>
                             <Text style={ESTILO.titulo}>
                                 Esquizofrenia
@@ -44,8 +47,9 @@ export function guiaJogos() {
                             </Text>
                         </View>
                         <Image source={require("../assets/esqui.png")} style={ESTILO.esquizofreniaImg} />
-                    </View>
-                    <View style={ESTILO.parkinson}>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity style={ESTILO.parkinson}>
                         <View style={ESTILO.parkinsonTexto}>
                             <Text style={ESTILO.titulo}>
                                 Parkinson
@@ -55,7 +59,7 @@ export function guiaJogos() {
                             </Text>
                         </View>
                         <Image source={require("../assets/malParkinson.png")} style={ESTILO.parkinsonImg} />
-                    </View>
+                    </TouchableOpacity>
                 </View>
             </ScrollView>
         </SafeAreaView>
@@ -96,6 +100,7 @@ const ESTILO = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-around",
         alignItems: "center"
+        
     },
     esquizofrenia: {
         width: 288,
