@@ -2,7 +2,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Home } from './pages/index'
 import { guiaExercicios } from './pages/guiaExercicios'
 import { guiaJogos } from './pages/guiaJogos'
-import { desempenho } from './pages/desempenho'
+import { pageJogos } from './pages/pageJogos'
 import { instituicoes } from './pages/instituicoes'
 import { Ionicons } from '@expo/vector-icons/'
 
@@ -54,8 +54,8 @@ export function Routes() {
                 }}
             />
              <Tab.Screen
-                name="desempenho"
-                component={desempenho}
+                name="pageJogos"
+                component={pageJogos}
                 options={{
                     tabBarShowLabel: false,
                     headerShown: false,
