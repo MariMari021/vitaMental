@@ -80,11 +80,11 @@ export function pageJogos() {
                         <TouchableOpacity style={ESTILO.botaoJogosIndividual}>
                             <View style={ESTILO.botaoJogosIndividual}>
                                 <View style={ESTILO.iconeMusicJogosIndividuais}>
-                                    <Ionicons name="musical-notes-outline" style={ESTILO.MusicJogosIndividuais} />
+                                    <Image source={require("../assets/cruzadinhaIcone.png")} style={ESTILO.imgCruzadinhaJogosIndividuais} />
                                 </View>
                                 <View style={ESTILO.conteudoJogosIndividuais}>
                                     <Text style={ESTILO.tituloJogosIndividuais}>
-                                        Acerte a música
+                                        Cruzadinha
                                     </Text>
                                     <Text style={ESTILO.subtituloJogosIndividuais}>
                                         5 desafios
@@ -101,11 +101,11 @@ export function pageJogos() {
                         <TouchableOpacity style={ESTILO.botaoJogosIndividual}>
                             <View style={ESTILO.botaoJogosIndividual}>
                                 <View style={ESTILO.iconeMusicJogosIndividuais}>
-                                    <Ionicons name="musical-notes-outline" style={ESTILO.MusicJogosIndividuais} />
+                                    <Ionicons name="bulb-outline" style={ESTILO.MusicJogosIndividuais} />
                                 </View>
                                 <View style={ESTILO.conteudoJogosIndividuais}>
                                     <Text style={ESTILO.tituloJogosIndividuais}>
-                                        Acerte a música
+                                        Quiz
                                     </Text>
                                     <Text style={ESTILO.subtituloJogosIndividuais}>
                                         5 desafios
@@ -122,11 +122,11 @@ export function pageJogos() {
                         <TouchableOpacity style={ESTILO.botaoJogosIndividual}>
                             <View style={ESTILO.botaoJogosIndividual}>
                                 <View style={ESTILO.iconeMusicJogosIndividuais}>
-                                    <Ionicons name="musical-notes-outline" style={ESTILO.MusicJogosIndividuais} />
+                                    <Image source={require("../assets/coresIcone.png")} />
                                 </View>
                                 <View style={ESTILO.conteudoJogosIndividuais}>
                                     <Text style={ESTILO.tituloJogosIndividuais}>
-                                        Acerte a música
+                                        Acerte as cores
                                     </Text>
                                     <Text style={ESTILO.subtituloJogosIndividuais}>
                                         5 desafios
@@ -136,6 +136,11 @@ export function pageJogos() {
                                     <Ionicons name="play-circle-outline" style={ESTILO.iconeJogosIndividuais} />
                                 </View>
                             </View>
+                        </TouchableOpacity>
+                    </View>
+                    <View style={ESTILO.voltar}>
+                        <TouchableOpacity>
+                            <Ionicons name="chevron-back-outline" style={ESTILO.voltarJogos} />
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -150,7 +155,7 @@ const ESTILO = StyleSheet.create({
         paddingRight: 50,
         paddingTop: 30,
         backgroundColor: "#3c4146",
-        height: 585,
+        height: 606,
         borderBottomLeftRadius: 50,
         borderBottomRightRadius: 50
     },
@@ -226,6 +231,10 @@ const ESTILO = StyleSheet.create({
         width: 25,
         height: 25,
     },
+    imgCruzadinhaJogosIndividuais: {
+        width: 33,
+        height: 33
+    },
     tituloJogosIndividuais: {
         fontSize: 15,
         fontWeight: 500,
@@ -237,12 +246,18 @@ const ESTILO = StyleSheet.create({
         fontWeight: 400
     },
     conteudoJogosIndividuais: {
-        marginRight: 60
+        minWidth: 175
     },
     iconeJogosIndividuais: {
         fontSize: 35,
         color: '#fff'
+    },
+    voltar: {
+        marginTop: 15
+    },
+    voltarJogos: {
+        color: '#fff',
+        fontSize: 25
     }
-
 
 })
