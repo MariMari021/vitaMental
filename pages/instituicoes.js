@@ -130,13 +130,13 @@ const ESTILO = StyleSheet.create({
         justifyContent: 'space-between'
     },
     textoCalendario: {
-        color: '#3C4146',
+        color: "#3C4146",
         fontSize: 20,
         paddingRight: 15
     },
     iconeCalendario: {
         fontSize: 20,
-        color: '#3C4146'
+        color: "#3C4146"
     },
     titulosInstituicoes: {
         marginTop: 30
@@ -144,7 +144,7 @@ const ESTILO = StyleSheet.create({
     tituloInstituições: {
         fontSize: 23,
         fontWeight: "500",
-        color: '3C4146'
+        color: '#3C4146'
     },
     subtituloInstituicoes: {
         fontSize: 18,
