@@ -110,6 +110,7 @@ const ESTILO = StyleSheet.create({
     botaoExercicioJogo: {
         marginTop: 50,
         width: "40%",
+        height: 150,
         borderRadius: 35,
         padding: 18,
         backgroundColor: '#3C4146',
