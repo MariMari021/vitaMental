@@ -172,12 +172,11 @@ const ESTILO = StyleSheet.create({
         fontSize: 20,
         color: '#fff'
     },
-<<<<<<< HEAD
     doenca: {
         backgroundColor:'#fff',
         margin: 20,
         backgroundColor: '#fff'
-=======
+    },
     containerDoenca: {
         alignItems: 'center',
         marginTop: 20
@@ -264,7 +263,7 @@ const ESTILO = StyleSheet.create({
     voltarJogos: {
         color: '#fff',
         fontSize: 25
->>>>>>> 6175f3e9466c4958eb636a8fa5c6aefe6f7928d4
+
     }
 
 })
