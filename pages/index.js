@@ -1,8 +1,22 @@
-import { ScrollView, View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
+import { ScrollView, View, Text, StyleSheet, Image, TouchableOpacity, Linking } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from '@expo/vector-icons/'
+import { useNavigation } from '@react-navigation/native';
+
 
 export function Home() {
+    const navigation = useNavigation();
+
+  function toExercicio() {
+    navigation.navigate('guiaExercicios'); // Navega para a tela 'guiaExercicios'
+  }
+  function toJogos() {
+    navigation.navigate('guiaJogos'); // Navega para a tela 'guiaExercicios'
+  }
+  function toConheca() {
+    navigation.navigate('instituicoes'); // Navega para a tela 'guiaExercicios'
+  }
+
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <ScrollView>
@@ -21,7 +35,7 @@ export function Home() {
                     </View>
                 </View>
                 <View style={ESTILO.butoes}>
-                    <TouchableOpacity style={ESTILO.botaoExercicioJogo}>
+                    <TouchableOpacity style={ESTILO.botaoExercicioJogo} onPress={toExercicio}>
                         <View style={ESTILO.exercicioJogo}>
                             <Text style={ESTILO.tituloBotao}>
                                 Exercícios
@@ -33,7 +47,7 @@ export function Home() {
                         </Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={ESTILO.botaoExercicioJogo}>
+                    <TouchableOpacity style={ESTILO.botaoExercicioJogo} onPress={toJogos}>
                         <View style={ESTILO.exercicioJogo}>
                             <Text style={ESTILO.tituloBotao}>
                                 Jogos
@@ -46,7 +60,7 @@ export function Home() {
                     </TouchableOpacity>
                 </View>
                 <View style={ESTILO.conhecaMais}>
-                    <TouchableOpacity style={ESTILO.botaoConhecaMais}>
+                    <TouchableOpacity style={ESTILO.botaoConhecaMais} onPress={toConheca}>
                         <Text style={ESTILO.tituloConhecaMais}>
                             Conheça +
                         </Text>
