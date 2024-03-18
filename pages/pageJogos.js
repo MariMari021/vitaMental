@@ -46,10 +46,10 @@ const ESTILO = StyleSheet.create({
         fontSize: 20,
         color: '#fff'
     },
-    doenca: {,
-        backgroundColor: #fff
+    doenca: {
+        backgroundColor:'#fff',
         margin: 20,
-        backgroundColor: #fff
+        backgroundColor: '#fff'
     }
 
 })
