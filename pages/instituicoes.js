@@ -3,7 +3,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from '@expo/vector-icons/'
 
 
-export function instituicoes() {
+export function Instituicoes() {
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <ScrollView>
@@ -143,7 +143,7 @@ const ESTILO = StyleSheet.create({
     },
     tituloInstituições: {
         fontSize: 23,
-        fontWeight: 500,
+        fontWeight: "500",
         color: '3C4146'
     },
     subtituloInstituicoes: {
@@ -170,7 +170,7 @@ const ESTILO = StyleSheet.create({
     numerosInstituicoes: {
         fontSize: 22,
         color: '#3C4146',
-        fontWeight: 600
+        fontWeight: "600"
     },
     linksInstituicoes: {
         backgroundColor: '#3C4146',

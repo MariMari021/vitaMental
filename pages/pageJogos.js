@@ -2,7 +2,7 @@ import { View, StyleSheet, Text, Image, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from '@expo/vector-icons/'
 
-export function pageJogos() {
+export function PageJogos() {
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <View style={ESTILO.container}>
@@ -194,7 +194,7 @@ const ESTILO = StyleSheet.create({
     tituloDoenca: {
         fontSize: 18,
         color: '#000',
-        fontWeight: 500
+        fontWeight: "500"
     },
     textoDoenca: {
         fontSize: 15,
@@ -230,7 +230,7 @@ const ESTILO = StyleSheet.create({
     MusicJogosIndividuais: {
         fontSize: 25,
         color: '#fff',
-        fontWeight: 100
+        fontWeight: "100"
     },
     imgJogosIndividuais: {
         width: 25,
@@ -242,13 +242,13 @@ const ESTILO = StyleSheet.create({
     },
     tituloJogosIndividuais: {
         fontSize: 15,
-        fontWeight: 500,
+        fontWeight: "500",
         color: '#fff'
     },
     subtituloJogosIndividuais: {
         fontSize: 13,
         color: '#ffffffe8',
-        fontWeight: 400
+        fontWeight: "400"
     },
     conteudoJogosIndividuais: {
         minWidth: 175

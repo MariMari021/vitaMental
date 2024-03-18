@@ -1,7 +1,7 @@
 import { View, StyleSheet, Text} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-export function desempenho() {
+export function Desempenho() {
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <View style={ESTILO.header}>
@@ -21,7 +21,6 @@ const ESTILO = StyleSheet.create({
     },
     title: {
         fontSize: 18,
-        fontWeight: "bold",
         color: "#FFF"
     }
 

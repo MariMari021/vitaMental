@@ -86,7 +86,7 @@ const ESTILO = StyleSheet.create({
     titulo: {
         color: '#fff',
         fontSize: 22,
-        fontWeight: 500,
+        fontWeight: "500",
 
     },
     subtitulo: {
@@ -124,7 +124,7 @@ const ESTILO = StyleSheet.create({
     tituloBotao: {
         fontSize: 18,
         color: '#fff',
-        fontWeight: 500
+        fontWeight: "500"
     },
     textoBotao: {
         fontSize: 12,
@@ -155,7 +155,7 @@ const ESTILO = StyleSheet.create({
         color: '#fff',
         fontSize: 20,
         marginBottom: 10,
-        fontWeight: 500
+        fontWeight: "500"
     },
     textoConhecaMais: {
         color: '#ffffffe8',

@@ -1,7 +1,7 @@
 import { ScrollView, Image, View, StyleSheet, Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-export function guiaExercicios() {
+export function GuiaExercicios() {
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <ScrollView>

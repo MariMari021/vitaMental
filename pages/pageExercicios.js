@@ -33,7 +33,6 @@ const ESTILO = StyleSheet.create({
     },
     title: {
         fontSize: 18,
-        fontWeight: "bold",
         color: "#FFF"
     },
 
