@@ -161,7 +161,7 @@ const ESTILO = StyleSheet.create({
         backgroundColor: '#D9D9D9',
         alignItems: 'center',
         justifyContent: 'center',
-        width: 45,
+        width: '18%',
         height: 45,
         borderRadius: 10,
         backgroundColor: '#D9D9D9',
@@ -174,7 +174,7 @@ const ESTILO = StyleSheet.create({
     },
     linksInstituicoes: {
         backgroundColor: '#3C4146',
-        width: 212,
+        width: '75%',
         height: 38,
         borderRadius: 50,
         alignItems: 'center',
