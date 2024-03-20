@@ -25,7 +25,7 @@ export function GuiaJogos() {
                         <Image source={require("../assets/exerAlzhei.png")} style={ESTILO.alzheimerImg} />
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={ESTILO.avc}>
+                    <TouchableOpacity style={ESTILO.avc} >
                         <View style={ESTILO.avcTexto}>
                             <Text style={ESTILO.titulo}>
                                 AVC

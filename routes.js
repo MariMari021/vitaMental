@@ -1,8 +1,7 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Home } from './pages/index'
+import { Home } from './pages/home'
 import { GuiaExercicios } from './pages/guiaExercicios'
 import { GuiaJogos } from './pages/guiaJogos'
-import { PageExercicios } from './pages/pageExercicios'
 import { Instituicoes } from './pages/instituicoes'
 import { Ionicons } from '@expo/vector-icons/'
 
